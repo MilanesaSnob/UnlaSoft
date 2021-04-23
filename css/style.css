@@ -1,0 +1,181 @@
+/* Made by UnlaSoft in the pandemic year of 2020 */
+
+/* GLOABLES */
+body {font-family: 'Ubuntu', sans-serif; background: #ffffff;}
+p, a {font-weight: 300;} 
+a:hover {text-decoration: none;}
+.grad-header {
+    background: rgb(48,60,104);
+    background: linear-gradient(90deg, rgba(48,60,104,1) 0%, rgba(137,79,134,1) 35%, rgba(208,93,116,1) 64%, rgba(234,173,97,1) 100%);
+}
+.grad-jumbo{
+    background: rgb(48,60,104);
+    background: linear-gradient(90deg, rgba(234,173,97,1) 0%, rgba(208,93,116,1) 35%, rgba(137,79,134,1) 64%, rgba(48,60,104,1) 100%);
+}
+
+
+/*--- HEADER Y NAV ---*/
+header .navbar-brand img {width: 216px;}
+
+header .navbar {box-shadow: 0px 3px 6px 0px#222;}
+header .line-top {height: 5px;}
+header .navbar-light button.navbar-toggler {border-color: #6A1A34;/*background-color:#D05D74;*/}
+header .navbar-light button.navbar-toggler .navbar-toggler-icon {color: #6A1A34 !important;}
+
+header nav.navbar .navbar-nav li.nav-item a {
+	font-size: 18;
+	color:rgba(106, 26, 52, 1);
+	transition: all .6s;
+	padding:10px 20px;
+	border-radius: 50px;
+	margin: 0 5px;
+}
+header nav.navbar .navbar-nav li.nav-item a:hover {
+	background: rgba(106, 26, 52, 1);
+	color: rgba(255, 255, 255, 1);
+
+}
+header nav.navbar .navbar-nav li.nav-item a:focus {
+	background: rgba(106, 26, 52, 1);
+	color: rgba(255, 255, 255, 1);
+}
+
+
+
+/*--- JUMBOTRON ---*/
+#jumbo {color: white; text-align: right; padding-top: 3rem;}
+#jumbo .jumbotron {margin-bottom: 0; }
+#jumbo h1 {font-weight: bold; font-size: 3rem;line-height: 0.8;}
+#jumbo h1 small {font-weight: normal; font-size: 1.5rem; margin: 0 0 1.5rem 0; line-height: 1.1;}
+#jumbo p {font-size: 1.1rem; line-height: 1.7; font-weight: 300;}
+
+#jumbo .btn {background: #D05D74; color: #4B2939; border-radius: 50px;  padding: 8px 50px; border: 0; font-size: 1.2rem; transition: all .3s;}
+#jumbo .btn:hover {background: white; color:#A42D43;}
+
+/*--- QUIENES SOMOS ---*/
+#quienes {padding: 5rem 0;}
+#quienes h2 {font-size: 2.5rem; font-weight: 300;color: #A42D43; margin: 0 0 2.5rem 0;}
+#quienes p {font-size: 1.3rem; color: #4B2939; line-height: 1.7;}
+
+
+/*--- PRODUCTOS ---*/
+#productos {padding: 5rem 0; background: #6A1A34; color: white; text-align: right;}
+#productos h2 {font-size: 2.5rem; font-weight: 300; margin: 0 0 2.5rem 0;}
+#productos p {font-size: 1.3rem; color: #e0c5ce; line-height: 1.7;}
+
+#productos .btn {background: #D05D74; color: #4B2939; border-radius: 50px;  padding: 8px 40px; border: 0; font-size: 1.2rem; transition: all .3s;}
+#productos .btn:hover {background: white; color:#A42D43;}
+#productos strong {font-weight: 700; color: white;}
+
+#productos .bg-cdark {background: rgba(75, 41, 57, 1); color: white;}
+#productos .bg-clight {background: rgba(164, 45, 67, 1); color: white;}
+#productos .cpink {color:#e0c5ce;}
+
+#productos .caja {position: relative;}
+#productos .persiana {
+	position: absolute;
+	overflow: hidden;
+	bottom: 100%;
+	left:0;
+	width: 100%;
+	height: 0;
+	transition: all .4s;
+}
+#productos .caja:hover .persiana {
+	bottom: 0;
+	height: 100%;
+}
+#productos .text {
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	-moz-transform:translate(-50%,-50%);
+	-webkit-transform:translate(-50%,-50%);
+	font-size: 1.2rem;
+	text-align: left;
+
+	padding: 10px;
+	width: 100%;
+}
+#productos .text p {font-size: .8em; color: white; line-height: 1.3;}
+
+
+
+/*--- SERVICIOS ---*/
+#servicios {padding: 5rem 0; background: #e0c5ce; color: white;}
+#servicios h2 {font-size: 2.5rem; font-weight: 300;color: #A42D43; margin: 0 0 2.5rem 0;}
+#servicios p {font-size: 1.3rem; color: #4B2939; line-height: 1.7;}
+
+
+/*--- TECNOLOGIAS ---*/
+#tecnologias {padding: 5rem 0 2rem 0; text-align: right;}
+#tecnologias h2 {font-size: 2.5rem; font-weight: 300;color: #A42D43; margin: 0 0 2.5rem 0;}
+#tecnologias p {font-size: 1.3rem; color: #4B2939; line-height: 1.7;}
+
+
+/*--- CAROUSEL ---*/
+#carou {padding: 0 0 5rem 0;}
+/*#carou .owl-theme .owl-dots .owl-dot span {background: rgba(208, 93, 116, 1);}*/
+
+
+/*--- CONTACTO ---*/
+#contacto {padding: 5rem 0; background: #4B2939;}
+#contacto h2 {font-size: 2.5rem; font-weight: 300; margin: 0 0 2.5rem 0; color: white;}
+#contacto p {font-size: 1.3rem; color: #e0c5ce; line-height: 1.7;}
+
+#contacto hr {border:solid thin #D05D74; margin: -15px 0 5px 35px;}
+#contacto p.info i {color: #D05D74; margin: 0 15px 0 0; }
+#contacto a {color: white; margin: 0 0 0 35px; font-size: 1rem; transition: all .3s;}
+#contacto a:hover {color: #D05D74;}
+
+#contacto .s-media{margin-top: 4rem;}
+#contacto .s-media a {color:#A42D43; margin: 0 0 0 35px;transition: all .3s;}
+#contacto .s-media a:hover {color: #D05D74;}
+#contacto .invalid-feedback {font-size: 1rem;}
+
+#contacto .form-control {
+	border:none;
+	border: 1px solid rgba(164, 45, 67, 1);
+	transition: all .2s;
+}
+#contacto .form-control:focus {
+	border-bottom: 3px solid rgba(208, 93, 116, 1);
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	border-radius: 0;
+	background-color: #e0c5ce;
+	color:#6A1A34
+}
+
+#contacto .btn {background: #A42D43; border-radius: 50px; color: white; padding: 8px 70px; border: 0; font-size: 1.2rem; transition: all .3s;}
+#contacto .btn:hover {background: #D05D74; color: #4B2939;}
+
+
+/*--- FOOTER ---*/
+footer {color: #4B2939;}
+footer img {width: 150px;}
+
+
+
+/*---- MEDIA ------*/
+@media screen and (max-width: 768px){
+	h1, h2, p {text-align: center;}
+	#contacto p.info {margin: 0; }
+	#contacto hr {margin: 0; width: 100%;}
+	#contacto a {margin:5px auto;}
+	#contacto .s-media{margin: 1.5rem auto 0 auto;}
+	#contacto .s-media a {margin: 0 10px;}
+
+	#contacto .btn {display: block; width: 100%; padding: 12px 70px; font-size: 1.5rem;}
+	#jumbo .btn {display: block; width: 100%; padding: 12px 50px;  font-size: 1.5rem;}
+	#productos .btn {display: block; width: 100%; margin: 0 0 2rem 0; padding: 12px 40px; font-size: 1.5rem;}
+
+	#productos .text {font-size: 3rem; text-align: left; padding: 20px;}
+	#productos .text p {font-size: 1.5rem; color: white; line-height: 1.3;text-align: left;}
+}
+@media (max-width: 575px) {
+
+
+}
